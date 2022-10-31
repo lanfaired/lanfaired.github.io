@@ -1,12 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <body>
-        <h1>视频1</h1>
-        <video controls="controls" autoplay="autoplay">
-            <source src="./video/movie.mp4" type="video/mp4" />
-        </video>
-    </body>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=AM_HTMLorMML-full"></script>
+    <link rel="stylesheet" href="./md/css/editormd.css" />
 </head>
-</html>
+<body>
+    <div class="formula">
+        <label>暴雨强度公式：</label>`i=A/(t+b)^n`<br>
+        <label>峰前降雨强度公式：</label>`i(t_b)=A[(1-n)*t/r+b]/[(t_b/r)+b]^(n+1)`<br>
+        <label>峰后降雨强度公式：</label>`i(t_a)=A[(1-n)*t_a/(1-r)+b]/[(t_a/(1-r))+b]^(n+1)`<br>
+        <label>备注：</label>`f(x) = \int_{-\infty}^\infty\hatf(\xi)\e^{2 \pi i \xi x}\d\xi`<br>
+        <label for="">勾股定理：</label> `a^2+b^2=c^2`
+    </div>
+    <div id="test-editor">
+        <span class="mord mathit">E</span>
+        <span class="mrel">=</span>
+    </div>
+</body>
 
+<script src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="./md/editormd.min.js"></script>
+<script type="text/javascript">
+    $(function() {
+        var editor = editormd("test-editor", {
+            width  : "100%",
+            height : 600,
+            path   : "./md/lib/"
+        });
+    });
+</script>
+</html>

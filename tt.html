@@ -1,0 +1,80 @@
+<head>
+    <title>综合练习</title>
+   <meta charset="gbk">
+ </head>
+ <body bgcolor="gold" text="#00000" leftmargin="0" topmargin="30">
+ <form name="form1" method="post" action="注册成功.html">
+ <fieldset>
+ <legend>
+ <font face="微软雅黑" color="#FF000" size="10">注册</font>
+ </legend>
+ <table width="400" border="0" cellpadding="5" cellspacing="0"  align="center">
+         <tr>
+             <td width="26%" align="right">
+             <label for="username">用户名</label></td>
+             <td><input type="text" id="username" name="username"></td>
+         </tr>
+         <tr>
+            <td width="26%" align="right">
+            <label for="password">密码</label></td>
+            <td><input type="password" id="password" name="passwd" maxlength="18"></td>
+         </tr>
+         <tr>
+            <td width="30%" align="right">
+            <label for="gender">性别</label>
+            </td>
+            <td width="30%">
+               <input type="radio" id="gender" name="sex" checked value=" ">男
+               <input type="radio" name="sex" value=" ">女
+            </td>
+         </tr>
+         <tr>
+            <td width="26%" align="right">
+            <label for="email">电子邮件</label></td>
+            <td><input type="text" id="email" name="email"</td>
+         </tr>
+         <tr>
+            <td width="26%" align="right">
+            <label for="website">个人网站</label></td>
+            <td><input type="text" id="website" name="website"></td>
+         </tr>
+         <tr> 
+            <td width="26%" align="right">
+            <label for="register_data">注册日期</label></td>
+            <td><input type="text" id="register_data" name="register_data" value="年/月/日"></td>
+        </tr>
+        <tr>
+           <td align="right">
+           <label for="vocation">职业</label></td>
+           <td><select id="vocation" name="select">
+                     <option value ="">请选择</option>
+                     <option value ="">教师</option>
+                     <option value ="">医生</option>
+                     <option value ="">程序员</option>
+                     <option value ="">公务员</option>
+                   </select><td>
+        </tr>
+        <tr>
+          <td align="right"><label for="hobby">个人爱好</label></td>
+          <td><input type="checkbox" id="hobby" name="checkbox" value="checkbox" checked>电脑网络
+                   <input type="checkbox" name="checkbox2" value="checkbox" >影视娱乐
+                   <input type="checkbox" name="checkbox3" value="checkbox" >棋牌游戏<br>
+                   <input type="checkbox" name="checkbox4" value="checkbox" >读书读报
+                   <input type="checkbox" name="checkbox2" value="checkbox" >美酒佳肴
+                   <input type="checkbox" name="checkbox3" value="checkbox" >绘画书法
+           </td>
+       </tr>
+       <tr>
+           <td align="right"><label for="leave_meg">留言内容</label></td>
+           <td><textarea rows="4" cols="40" id="leave_meg" name="leave_meg" autofocus></textarea></td>
+       </tr>
+       <tr>
+           <td>&nbsp;</td>
+           <td align="middle" colspan="2"><input type="submit" name="submit" value="提交">&nbsp;&nbsp;&nbsp;&nbsp;
+           <input type="reset" name="reset" value="重置"></td>
+       </tr>
+ </table>
+ </fieldset>
+ </form>
+ </body>
+ </html>
